@@ -1,0 +1,6 @@
+(executables
+ ((names (plop print_dirstate))
+  (libraries (re re.pcre))
+  (ocamlopt_flags (-inline 200))))
+
+(ocamllex (lexer))
