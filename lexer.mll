@@ -63,7 +63,7 @@ and glob_braces = parse
 
 and regexp = parse
 | ([^'\n']* as s) eol
-   { Lexing.new_line lexbuf; Re_pcre.re s }
+   { Lexing.new_line lexbuf; Re.Pcre.re s }
 
 {
   let load fn =
